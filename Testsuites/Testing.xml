@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite"> <!--or parallel="methods" and for parallel add parallel="tests"-->
+    <listeners>
+        <listener class-name="testComponents.Listeners"/>
+    </listeners>
+
+    <test thread-count="5" name="Submit Order Test">
+        <classes>
+            <class name="testcases.SubmitOrderTest"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Error Validations Test">
+        <classes>
+            <class name="testcases.ErrorValidationTest"/>
+        </classes>
+    </test>
+</suite>
